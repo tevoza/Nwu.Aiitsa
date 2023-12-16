@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 public sealed class HomeController : ApiController
 {
-    [HttpGet]
-    public IActionResult Get()
-    {
-        return Ok("Hello Wortel!");
-    }
+	[HttpGet]
+	public IActionResult Get()
+	{
+		return Ok("Hello Wortel!");
+	}
 }
