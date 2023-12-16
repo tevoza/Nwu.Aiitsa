@@ -1,0 +1,6 @@
+@Nwu.Aiitsa.Webhost_HostAddress = http://localhost:5226
+
+GET {{Nwu.Aiitsa.Webhost_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
