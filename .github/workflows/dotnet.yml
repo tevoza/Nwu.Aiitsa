@@ -16,16 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-	
+
     - name: '.NET: Setup'
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
 
-    - name: 'CSharpier: Check Formatting'
+    - name: '.NET: Formatting and Build'
       run: |
           dotnet tool restore
           dotnet csharpier --check .
-  	  
-    - name: Build
-      run: dotnet build Nwu.Aiitsa/Nwu.Aiitsa.sln
+          dotnet build ./Nwu.Aiitsa/Nwu.Aiitsa.sln
